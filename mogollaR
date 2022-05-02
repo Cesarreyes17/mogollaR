@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .body {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 200px;
+        gap: 8px;
+        
+        
+    }
+
+    .tarjeta {
+        align-items: center;
+        display: flex;
+        font-size: 48px;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 0.5;
+        border-style:outset;
+        border-color: #40DFEF;
+    }
+    .tarjeta:hover, .double-height-card:hover, .triple-height-card:hover, .double-size-square:hover, .double-size-square2:hover, .double-size-square3:hover {
+        opacity: 1;
+        transform: translateY(-5px) scale(1.1);
+    }
+
+    .double-height-card {
+        grid-row: span 2 / auto;
+        background-color: beige;
+        cursor: pointer;
+        opacity: 0.5;
+        border-style:outset;
+        border-color: #E78EA9;
+        }
+    .triple-height-card {
+        grid-row: span 3 / auto;
+        background-color: beige;
+        cursor: pointer;
+        opacity: 0.5;
+        border-style:outset;
+        border-color: #FF7700;
+        }
+    .double-size-square {
+        grid-column: span 2/ auto;
+        grid-row: span  / auto;
+        background-color: beige;
+        cursor: pointer;
+        opacity: 0.5;
+        border-style:outset;
+        border-color: #B4FF9F;
+        }
+    .double-size-square2 {
+        grid-column: span 2/ auto;
+        grid-row: span  2/ auto;
+        background-color: beige;
+        cursor: pointer;
+        opacity: 0.5;
+        border-style:outset;
+        border-color: #FD5D5D;
+        }
+    .double-size-square3 {
+        grid-column: span 3/ auto;
+        grid-row: span  3/ auto;
+        background-color: beige;
+        cursor: pointer;
+        opacity: 0.5;
+        border-style:outset;
+        border-color: #B4FF9F;
+    }
+
+    .imagen {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+    .imagen1 {
+        height: 100%;
+        object-fit:inherit;
+        width: 100%;
+    }
+    
+
+    
+
+
+
+    </style>
+    </head>
+
+    <body class="body">
+        <div class="contenedor">
+            <div class="tarjeta"><img class= "imagen1" src="imagenes/img-9.jpg"></div>
+            <div class="double-size-square"><img class= "imagen" src="imagenes/img-10.jpg"></div>
+            <div class="double-height-card"><img class= "imagen" src="imagenes/img-1.jpg"></div>
+            <div class="triple-height-card"><img class= "imagen" src="imagenes/img-5.jpg"></div>
+            <div class="tarjeta"><img class= "imagen1" src="imagenes/img-15.jpg"></div>
+            <div class="tarjeta"><img class= "imagen1" src="imagenes/img-12.png"></div>
+            <div class="tarjeta"><img class= "imagen1" src="imagenes/img-14.jpg"></div>
+            <div class="double-size-square2"><img class= "imagen1" src="imagenes/img-8.jpg"></div>
+            <div class="tarjeta"><img class= "imagen" src="imagenes/img-4.jpg"></div>
+            <div class="double-size-square3"><img class= "imagen1" src="imagenes/img-3.jpg"></div>
+            <div class="triple-height-card"><img class= "imagen" src="imagenes/img-6.jpg"></div>
+        </div>
+    </body>
+</html>
